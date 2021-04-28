@@ -1,0 +1,6 @@
+import socket
+
+hostn = socket.gethostname()
+asus = socket.gethostbynname(hostn)
+
+print("IP Address = "+asus)
