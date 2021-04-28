@@ -1,0 +1,20 @@
+# PYTHON.uses
+
+import requests, json
+city = "Delhi"
+api_key = "get your api key openwearhermap.org"
+base_url = "https://api.openweathermap.org/data/2.5/weather?"
+url = base_url+ "appid="+api_key+"&q="+city
+response = requests.get(url)
+x = response.json()
+print(x)
+if x['cod']!=401:
+    print("City Name : ", X['name'])
+    print("Weather: ", X['Weather'])
+    print("Weather: ", X['Weather'][0]['main'])
+    print("Temp : ", X['main']['temp'])
+    print("Minimum Temp : ", X['main']['temp_min'])
+    print("Max Temp : ", X['main']['temp_max'])
+
+else:
+    print("City of found")
