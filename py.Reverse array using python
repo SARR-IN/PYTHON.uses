@@ -1,0 +1,11 @@
+# PYTHON.uses
+
+n = [1, 2, 3, 4, 5]
+print("Original array: ")
+for i in n:
+    print(i, end=" ")
+print()
+n = n[::-1]
+print("Array in reverse order: ")
+for i in n:
+    print(i, end=" ")    
